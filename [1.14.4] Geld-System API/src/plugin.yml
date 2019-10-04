@@ -1,0 +1,7 @@
+name: MoneySys
+author: TeamDream
+version: 1.1
+
+main: me.teamdream.de.server
+commands:
+  description:

@@ -1,8 +1,21 @@
 package me.teamdream.de.server;
 
-public class GServer {
-//de kek
-	/* Du bistn Kek */
-	//oke
-	//ALLAHU AKBARS
+import org.bukkit.Bukkit;
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class GServer extends JavaPlugin {
+
+	private static GServer pl;
+
+	@Override
+	public void onEnable() {
+		pl = this;
+
+		Bukkit.getConsoleSender().sendMessage("§aDas Plugin wurde erfolgreich geladen!");
+	}
+
+	public static GServer getInstance() {
+		return pl;
+	}
+
 }
