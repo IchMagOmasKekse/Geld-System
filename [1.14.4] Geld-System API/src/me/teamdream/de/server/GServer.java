@@ -1,5 +1,6 @@
 package me.teamdream.de.server;
 
 public class GServer {
-//du kek 
+//de kek
+	/* Du bistn Kek */
 }
