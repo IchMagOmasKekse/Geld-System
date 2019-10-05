@@ -24,7 +24,7 @@ public class MoneyListener implements Listener {
 		Player p = Bukkit.getPlayer(e.getGetter());
 		if(e.wasSuccess()) {
 			if(e.getAnzahl() > 0) p.sendMessage("§b[GeldEinzahlEvent] §7Dein Kontostand hat sich verändert §7-> §2+"+e.getAnzahl());
-			else p.sendMessage("§b[GeldEinzahlEvent] §7Dein Kontostand hat sich verändert §7-> §c-"+e.getAnzahl());
+			else p.sendMessage("§b[GeldEinzahlEvent] §7Dein Kontostand hat sich verändert §7-> §c"+e.getAnzahl());
 			
 			p.sendMessage("§b[GeldEinzahlEvent] §7Kontostand: §f"+AccountManager.getMoney(e.getGetter()));
 		}else {
@@ -36,7 +36,7 @@ public class MoneyListener implements Listener {
 		Player p = Bukkit.getPlayer(e.getGetter());
 		if(e.wasSuccess()) {
 			if(e.getAnzahl() > 0) p.sendMessage("§b[GeldAuszahlEvent] §7Dein Kontostand hat sich verändert §7-> §2+"+e.getAnzahl());
-			else p.sendMessage("§b[GeldAuszahlEvent] §7Dein Kontostand hat sich verändert §7-> §c-"+e.getAnzahl());
+			else p.sendMessage("§b[GeldAuszahlEvent] §7Dein Kontostand hat sich verändert §7-> §c"+e.getAnzahl());
 			
 			p.sendMessage("§b[GeldAuszahlEvent] §7Kontostand: §f"+AccountManager.getMoney(e.getGetter()));
 		}else {
